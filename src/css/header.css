@@ -1,0 +1,27 @@
+:root {
+  --clr-header-font: #c9c899;
+}
+.header-container {
+  background-color: var(--clr-body);
+  box-shadow: 2px 2px 20px rgb(68, 98, 126);
+  position: fixed;
+  width: 70%;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  border-bottom: solid 2px rgb(68, 98, 126);
+}
+
+.title {
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  color: var(--clr-header-font);
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 20px;
+  }
+  .header-container {
+    padding: 10px 20px;
+  }
+}
